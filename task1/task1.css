@@ -1,0 +1,157 @@
+@import url(/task1/fonts.css)
+
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+   --color-primary-200: rgba(33, 159, 149, 1);
+   --color-black:  rgba(30, 30, 30, 1);
+--color-primary-0: rgba(255, 255, 255, 1);
+--color-blue: rgba(35, 72, 148, 1);
+--color-gray: rgba(105, 105, 105, 1);
+--color-primary-100: rgba(175, 206, 221, 1);
+--color-primary-300: rgba(96, 193, 100, 1);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body,
+.btn{
+    font-family: Vazirmatn;
+    
+}
+
+body{
+    background-color: var(--color-primary-0);
+}
+
+
+.panel h1{
+    font-size:22px ;
+    font-weight: 900;
+    margin: 2rem;
+    padding: 1.5rem;
+    max-width:500px;
+}
+
+.card{
+    max-width: 1200px;
+   max-height: 300px;
+   
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.card__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary-0);
+}
+.details__header{
+    font-size:1.6rem ;
+    font-weight: 600;
+    color: var(--color-blue);
+}
+
+
+
+.data__header{
+    color: var(--color-gray);
+    size: 12px;
+    font-weight: 400;
+}
+
+
+
+.content__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+   
+/* body */
+
+.card__body.header__body {
+    font-family: Vazirmatn;
+    font-size: 1.8rem; 
+    font-weight: 900;  
+}
+
+.header__body{
+display: flex;
+flex-direction: column;
+
+}
+
+
+.header__body h2{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--color-black);
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
+
+.name__body{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.details__body{
+    color: var(--color-gray);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.btn{
+    background-color: var(--color-primary-200);
+    color: var(--color-primary-0);
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 1px solid var(--color-primary-300);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+}
+
+.content__body{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.details__header{
+    background: url(/assets/imags/number-2-svgrepo-com\ \(2\).svg) no-repeat;
+    background-position: right center  ;
+    padding-right: 4.5rem;
+}
+
+@media  screen and (min-width:768px) {
+
+    .card{
+      grid-template-columns: repeat(2,1fr) ;
+  }  
+  }
+
+@media  screen and (min-width:1024px) {
+
+  .card{
+    grid-template-columns: repeat(3,1fr) ;
+}  
+}
